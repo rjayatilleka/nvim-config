@@ -1,0 +1,13 @@
+let g:EasyMotion_do_mapping = 0
+nmap f <Plug>(easymotion-s)
+omap f <Plug>(easymotion-s)
+vmap f <Plug>(easymotion-s)
+nmap t <Plug>(easymotion-bd-t)
+omap t <Plug>(easymotion-bd-t)
+vmap t <Plug>(easymotion-bd-t)
+nmap <leader><leader>w <Plug>(easymotion-bd-w)
+omap <leader><leader>w <Plug>(easymotion-bd-w)
+vmap <leader><leader>w <Plug>(easymotion-bd-w)
+nmap <leader><leader>e <Plug>(easymotion-bd-e)
+omap <leader><leader>e <Plug>(easymotion-bd-e)
+vmap <leader><leader>e <Plug>(easymotion-bd-e)

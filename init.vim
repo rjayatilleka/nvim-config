@@ -1,17 +1,42 @@
-let s:modules = [
-    \ 'general',
-    \ 'windows',
-    \ 'tab_pages',
-    \ 'movement',
-    \ 'searching',
-    \ 'editing',
-    \ 'indentation',
-    \ 'tags',
-    \ 'command_line_window',
-    \ 'plugin_initialization',
-    \ 'plugin_customization',
-  \ ]
+source $HOME/.config/nvim/framework.vim
 
-for module in s:modules
-  exec 'source' '$HOME/.config/nvim/rc/'.module.'.vim'
-endfor
+LoadModule 'general'
+LoadModule 'windows'
+LoadModule 'tab_pages'
+LoadModule 'movement'
+LoadModule 'searching'
+LoadModule 'editing'
+LoadModule 'indentation'
+LoadModule 'tags'
+LoadModule 'command_line_window'
+
+Plugin 'bkad/CamelCaseMotion', 'camel_case_motions'
+Plugin 'bling/vim-airline'
+Plugin 'ctrlpvim/ctrlp.vim', 'ctrlp'
+Plugin 'easymotion/vim-easymotion', 'easymotion'
+Plugin 'kana/vim-operator-replace', 'operator_replace'
+Plugin 'kana/vim-operator-user'
+Plugin 'kana/vim-textobj-entire'
+Plugin 'kana/vim-textobj-function'
+Plugin 'kana/vim-textobj-user'
+Plugin 'majutsushi/tagbar', 'tagbar'
+Plugin 'neomake/neomake', 'neomake'
+Plugin 'racer-rust/vim-racer', 'racer'
+Plugin 'rjayatilleka/tabmultidiff.vim'
+Plugin 'rjayatilleka/vim-auto-save', 'auto_save'
+Plugin 'rjayatilleka/vim-insert-char'
+Plugin 'rjayatilleka/vim-reload-all', 'reload_all'
+Plugin 'rjayatilleka/vim-yankstack', 'yankstack'
+Plugin 'rust-lang/rust.vim'
+Plugin 'scrooloose/nerdtree', 'nerd_tree'
+Plugin 'tpope/vim-abolish'
+Plugin 'tpope/vim-capslock', 'caps_lock'
+Plugin 'tpope/vim-commentary'
+Plugin 'tpope/vim-obsession'
+Plugin 'tpope/vim-repeat'
+Plugin 'tpope/vim-surround'
+Plugin 'tpope/vim-unimpaired'
+Plugin 'vim-scripts/xoria256.vim', 'xoria256'
+Plugin 'wellle/targets.vim'
+
+LoadPlugins
