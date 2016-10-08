@@ -7,7 +7,7 @@ All runtime configuration is modularized into different files and sourced in
 and `plugins` modules.
 
 Modules are sourced from `modules/`. Plugins are loaded with [vim-plug] and then
-customized from `plugin_modules/`.
+customized from `plugin_config/`.
 
 ### Todo
 
@@ -18,7 +18,7 @@ customized from `plugin_modules/`.
 
 - [vim-plug] by [junegunn@] 
 - [xoria256] by [x1o@] 
-- All plugins in `rc/plugins.vim` by their respective authors
+- All plugins in `modules/plugins.vim` by their respective authors
 
 [junegunn@]: https://github.com/junegunn
 [x1o@]: https://github.com/x1o
