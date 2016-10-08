@@ -1,15 +1,15 @@
 function! module_framework#init()
-  let s:rc_modules = []
+  let s:modules = []
   command! -nargs=1 Module call s:Module(<args>)
   command! LoadModules call s:LoadModules()
 endfunction
 
 function! s:Module(module)
-  let s:rc_modules += [ a:module ]
+  let s:modules += [ a:module ]
 endfunction
 
 function! s:LoadModules()
-  for module in s:rc_modules
+  for module in s:modules
     exec 'source' '$HOME/.config/nvim/modules/'.module.'.vim'
   endfor
 endfunction
