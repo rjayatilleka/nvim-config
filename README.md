@@ -20,10 +20,6 @@ disabling plugins easier since there won't be any errors about mappings that
 don't exist, etc. The framework also protects you when launching Vim for the
 first time when plugins haven't been installed yet.
 
-### Todo
-
-- Add Deoplete (preferred if working) or YouCompleteMe
-
 ### Credits
 
 - [vim-plug] by [junegunn@] 
