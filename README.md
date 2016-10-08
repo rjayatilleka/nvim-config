@@ -9,4 +9,3 @@ module as well as all plugins.
 ### Todo
 
 - Add YouCompleteMe
-- Add framework to autoload

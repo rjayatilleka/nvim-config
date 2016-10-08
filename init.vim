@@ -1,5 +1,4 @@
 call module_framework#init()
-source $HOME/.config/nvim/framework.vim
 
 Module 'general'
 Module 'windows'

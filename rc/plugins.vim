@@ -1,3 +1,5 @@
+call plugin_framework#init()
+
 Plugin 'bkad/CamelCaseMotion',        'camel_case_motions'
 Plugin 'bling/vim-airline'
 Plugin 'ctrlpvim/ctrlp.vim',          'ctrlp'
