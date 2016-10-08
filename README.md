@@ -11,3 +11,4 @@ module as well as all plugins.
 - Add easy-align
 - Add YouCompleteMe
 - Add framework to autoload
+- Add checks on loads
