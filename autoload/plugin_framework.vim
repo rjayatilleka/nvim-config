@@ -18,7 +18,7 @@ function! s:LoadPlugins()
   call plug#end()
 
   for module in values(s:modules)
-    exec 'source' '$HOME/.config/nvim/plugin_rc/'.module.'.vim'
+    exec 'source' '$HOME/.config/nvim/plugin_modules/'.module.'.vim'
   endfor
 endfunction
 

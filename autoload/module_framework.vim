@@ -10,6 +10,6 @@ endfunction
 
 function! s:LoadModules()
   for module in s:rc_modules
-    exec 'source' '$HOME/.config/nvim/rc/'.module.'.vim'
+    exec 'source' '$HOME/.config/nvim/modules/'.module.'.vim'
   endfor
 endfunction
