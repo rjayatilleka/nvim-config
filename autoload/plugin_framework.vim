@@ -1,12 +1,12 @@
 function plugin_framework#init()
   let s:plugs = []
-  let s:plugin_rc_modules = []
+  let s:modules = {}
 endfunction
 
 function! s:Plugin(...)
   let s:plugs += [ a:1 ]
   if a:0 == 2
-    let s:plugin_rc_modules += [ a:2 ]
+    exec 'let' 's:modules.'.a:2 '=' "'".a:2."'"
   end
 endfunction
 
@@ -17,7 +17,7 @@ function! s:LoadPlugins()
   endfo
   call plug#end()
 
-  for module in s:plugin_rc_modules
+  for module in values(s:modules)
     exec 'source' '$HOME/.config/nvim/plugin_rc/'.module.'.vim'
   endfor
 endfunction
