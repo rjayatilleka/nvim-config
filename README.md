@@ -16,8 +16,11 @@ customized from `plugin_rc/`.
 
 ### Credits
 
-- junegunn@ for [vim-plug]
-- x1o@ for [xoria256]
+- [vim-plug] by [junegunn@] 
+- [xoria256] by [x1o@] 
+- All plugins in `rc/plugins.vim` by their respective authors
 
+[junegunn@]: https://github.com/junegunn
+[x1o@]: https://github.com/x1o
 [vim-plug]: https://github.com/junegunn/vim-plug
 [xoria256]: https://github.com/vim-scripts/xoria256.vim
