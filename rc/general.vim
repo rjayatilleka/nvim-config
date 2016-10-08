@@ -1,4 +1,4 @@
-colorscheme xoria256
+colorscheme default
 let mapleader=","
 syntax on
 set directory=/tmp//

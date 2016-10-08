@@ -1,3 +1,6 @@
+" Colorscheme Xoria256
+colorscheme xoria256
+
 " Operator Replace
 map R <Plug>(operator-replace)
 

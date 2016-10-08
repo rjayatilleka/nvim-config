@@ -1,11 +1,17 @@
-source $HOME/.config/nvim/rc/init_plugins.vim
-source $HOME/.config/nvim/rc/general.vim
-source $HOME/.config/nvim/rc/windows.vim
-source $HOME/.config/nvim/rc/tab_pages.vim
-source $HOME/.config/nvim/rc/movement.vim
-source $HOME/.config/nvim/rc/searching.vim
-source $HOME/.config/nvim/rc/editing.vim
-source $HOME/.config/nvim/rc/indentation.vim
-source $HOME/.config/nvim/rc/tags.vim
-source $HOME/.config/nvim/rc/command_line_window.vim
-source $HOME/.config/nvim/rc/plugin_customization.vim
+let s:modules = [
+    \ 'general',
+    \ 'windows',
+    \ 'tab_pages',
+    \ 'movement',
+    \ 'searching',
+    \ 'editing',
+    \ 'indentation',
+    \ 'tags',
+    \ 'command_line_window',
+    \ 'plugin_initialization',
+    \ 'plugin_customization',
+  \ ]
+
+for module in s:modules
+  exec 'source' '$HOME/.config/nvim/rc/'.module.'.vim'
+endfor
