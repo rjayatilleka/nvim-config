@@ -9,9 +9,19 @@ and `plugins` modules.
 Modules are sourced from `modules/`. Plugins are loaded with [vim-plug] and
 then customized from `plugin_config/`.
 
+### Loading Framework
+
+`autoload/module_framework.vim` is simply a wrapper around `source` that
+searches in `modules/`. Use `:LoadModules` to reload all modules.
+
+`autoload/plugin_framework.vim` is a wrapper around vim-plug that allows you to
+add a plugin and a source file to configure it in one line. That makes
+disabling plugins easier since there won't be any errors about mappings that
+don't exist, etc. The framework also protects you when launching Vim for the
+first time when plugins haven't been installed yet.
+
 ### Todo
 
-- Make plugin rc only load when that plugin exists.
 - Add YouCompleteMe
 
 ### Credits

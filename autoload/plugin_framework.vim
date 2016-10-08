@@ -1,12 +1,13 @@
 function plugin_framework#init()
   let s:plugs = []
-  let s:modules = {}
+  let s:configs = {}
 endfunction
 
 function! s:Plugin(...)
   let s:plugs += [ a:1 ]
   if a:0 == 2
-    exec 'let' 's:modules.'.a:2 '=' "'".a:2."'"
+    let repo_name = matchstr(a:1, '.*/\zs.*')
+    exec 'let' 's:configs.'.a:2 '=' "'".repo_name."'"
   end
 endfunction
 
@@ -17,8 +18,11 @@ function! s:LoadPlugins()
   endfo
   call plug#end()
 
-  for module in values(s:modules)
-    exec 'source' '$HOME/.config/nvim/plugin_config/'.module.'.vim'
+  for config in items(s:configs)
+    exec 'let repodir =' "'~/.config/nvim/plugged/".config[1]."'"
+    if !empty(glob(repodir))
+      exec 'source' '$HOME/.config/nvim/plugin_config/'.config[0].'.vim'
+    end
   endfor
 endfunction
 

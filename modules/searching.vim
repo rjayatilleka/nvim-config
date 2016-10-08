@@ -1,4 +1,5 @@
 set ignorecase
 set smartcase
-vnoremap // y/<C-R>"<CR>
+vnoremap // y/\v<C-R>"<CR>
+nnoremap / /\v
 nnoremap <silent> <CR> :noh<CR>
