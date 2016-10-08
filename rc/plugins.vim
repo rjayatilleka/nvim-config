@@ -24,7 +24,6 @@ Plugin 'tpope/vim-obsession'
 Plugin 'tpope/vim-repeat'
 Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-unimpaired'
-Plugin 'vim-scripts/xoria256.vim', 'xoria256'
 Plugin 'wellle/targets.vim'
 
 LoadPlugins

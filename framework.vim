@@ -22,6 +22,9 @@ function! s:LoadPlugins()
   for module in s:plugin_rc_modules
     exec 'source' '$HOME/.config/nvim/plugin_rc/'.module.'.vim'
   endfor
+
+  let s:plugs = []
+  let s:plugin_rc_modules = []
 endfunction
 
 command! -nargs=1 LoadModule call s:Module(<args>)
