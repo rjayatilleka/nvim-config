@@ -1,4 +1,4 @@
-# Neovim Runtime Configuration
+# Neovim Configuration
 
 For Ramith Jayatilleka's personal use. Feel free to copy.
 
@@ -6,8 +6,8 @@ All runtime configuration is modularized into different files and sourced in
 `init.vim`. For a decent set of defaults, I recommend disabling the `windows`
 and `plugins` modules.
 
-Modules are sourced from `modules/`. Plugins are loaded with [vim-plug] and then
-customized from `plugin_config/`.
+Modules are sourced from `modules/`. Plugins are loaded with [vim-plug] and
+then customized from `plugin_config/`.
 
 ### Todo
 
