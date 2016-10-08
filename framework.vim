@@ -1,7 +1,3 @@
-function! s:Module(module)
-  exec 'source' '$HOME/.config/nvim/rc/'.a:module.'.vim'
-endfunction
-
 function! s:Plugin(...)
   let s:plugs += [ a:1 ]
   if a:0 == 2
@@ -27,6 +23,5 @@ function! s:LoadPlugins()
   let s:plugin_rc_modules = []
 endfunction
 
-command! -nargs=1 LoadModule call s:Module(<args>)
 command! -nargs=* Plugin call s:Plugin(<args>)
 command! LoadPlugins call s:LoadPlugins()

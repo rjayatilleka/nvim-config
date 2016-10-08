@@ -1,12 +1,15 @@
+call module_framework#init()
 source $HOME/.config/nvim/framework.vim
 
-LoadModule 'general'
-LoadModule 'windows'
-LoadModule 'tab_pages'
-LoadModule 'movement'
-LoadModule 'searching'
-LoadModule 'editing'
-LoadModule 'indentation'
-LoadModule 'tags'
-LoadModule 'command_line_window'
-LoadModule 'plugins'
+Module 'general'
+Module 'windows'
+Module 'tab_pages'
+Module 'movement'
+Module 'searching'
+Module 'editing'
+Module 'indentation'
+Module 'tags'
+Module 'command_line_window'
+Module 'plugins'
+
+LoadModules
