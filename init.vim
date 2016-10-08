@@ -1,0 +1,45 @@
+" vim-plug
+call plug#begin()
+
+Plug 'bkad/CamelCaseMotion'
+Plug 'bling/vim-airline'
+Plug 'ctrlpvim/ctrlp.vim'
+Plug 'easymotion/vim-easymotion'
+Plug 'kana/vim-operator-replace'
+Plug 'kana/vim-operator-user'
+Plug 'kana/vim-textobj-function'
+Plug 'kana/vim-textobj-entire'
+Plug 'kana/vim-textobj-user'
+Plug 'majutsushi/tagbar'
+Plug 'neomake/neomake'
+Plug 'rjayatilleka/vim-auto-save'
+Plug 'rjayatilleka/vim-insert-char'
+Plug 'rjayatilleka/vim-reload-all'
+Plug 'rjayatilleka/vim-yankstack'
+Plug 'rjayatilleka/tabmultidiff.vim'
+Plug 'rust-lang/rust.vim'
+Plug 'scrooloose/nerdtree'
+Plug 'tpope/vim-abolish'
+Plug 'tpope/vim-capslock'
+Plug 'tpope/vim-commentary'
+Plug 'tpope/vim-obsession'
+Plug 'tpope/vim-repeat'
+Plug 'tpope/vim-surround'
+Plug 'tpope/vim-unimpaired'
+Plug 'wellle/targets.vim'
+Plug 'racer-rust/vim-racer'
+
+" Colorschemes
+Plug 'vim-scripts/xoria256.vim'
+call plug#end()
+
+source general.vim
+source windows.vim
+source tab_pages.vim
+source movement.vim
+source searching.vim
+source editing.vim
+source indentation.vim
+source tags.vim
+source command_line_window.vim
+source plugin_customization.vim
