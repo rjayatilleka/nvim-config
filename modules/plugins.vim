@@ -29,7 +29,6 @@ Plugin 'tpope/vim-obsession'
 Plugin 'tpope/vim-repeat'
 Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-unimpaired'
-Plugin 'vimwiki/vimwiki'
 Plugin 'wellle/targets.vim'
 
 LoadPlugins
