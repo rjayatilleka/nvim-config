@@ -5,3 +5,5 @@ nnoremap M J
 nnoremap x "_x
 inoremap <expr> <C-j> pumvisible() ? '<C-n>' : ''
 inoremap <expr> <C-k> pumvisible() ? '<C-p>' : ''
+nnoremap <leader>o o<Esc>
+nnoremap <leader>O O<Esc>
