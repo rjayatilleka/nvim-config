@@ -4,6 +4,7 @@ Knowledge:
 - jump list
 - undo tree
 - change list
+- preview window
 
 tools:
 
@@ -13,7 +14,3 @@ tools:
 - syntastic
 - Add profile module, set up extra runtime path
 - Setup spell check multiple spellfiles
-- vim-ripgrep
-- syntastic
-- vim-after-object
-- vim -peekaboo
